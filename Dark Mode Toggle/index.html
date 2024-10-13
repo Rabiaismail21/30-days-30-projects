@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/72225e7e07.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dark Mode Toggle</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body[data-theme="light"] {
+      background-color: #fff;
+    }
+    body[data-theme="dark"] {
+      background-color: #121212;
+    }
+
+    body {
+      width: 100%;
+      height: 90vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .toggle-btn {
+      width: 120px;
+      height: 50px;
+      background-color: #dedede;
+      border: 1px solid rgb(249, 248, 248);
+      box-shadow: inset 3px 3px 7px rgb(186, 188, 190),
+        inset -3px -3px 7px #ffffff;
+      border-radius: 150px;
+      display: flex;
+      align-items: center;
+      padding: 0 4px;
+      transition: all 0.3s linear;
+    }
+
+    .toggle-btn div {
+      width: 50px;
+      height: 40px;
+      border-radius: 150px;
+      background-color: #373636;
+      transition: all 0.3s linear;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+    }
+    .translate {
+      transform: translateX(62px);
+      background-color: skyblue;
+    }
+
+    .fa-sun {
+      font-size: 1.2rem;
+      color: rgb(252, 252, 0);
+    }
+    .fa-moon {
+      font-size: 1.2rem;
+      color: rgb(75, 186, 233);
+    }
+    .none {
+      display: none;
+    }
+  </style>
+
+  <body data-theme="light">
+    <div class="toggle-btn">
+      <div class="bg-color">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon none"></i>
+      </div>
+    </div>
+
+    <script>
+      let toggleBtn = document.querySelector(".toggle-btn div");
+      let moonIcon = document.querySelector(".fa-moon");
+      let sunIcon = document.querySelector(".fa-sun");
+      let theme = document.body.getAttribute("data-theme");
+
+      toggleBtn.addEventListener("click", () => {
+        toggleBtn.classList.toggle("translate");
+        toggleBtn.classList.toggle("bg-color");
+        moonIcon.classList.toggle("none");
+        sunIcon.classList.toggle("none");
+        if (theme == "light") {
+          theme = "dark";
+        } else {
+          theme = "light";
+        }
+        document.body.setAttribute("data-theme", theme);
+      });
+    </script>
+  </body>
+</html>
