@@ -2,7 +2,7 @@
 
 Here are links to all 30 projects:
 
-- [Color Picker](https://rabiaismail21.github.io/30-days-30-projects/Color-picker)
+01 [Color Picker](https://rabiaismail21.github.io/30-days-30-projects/Color-picker)
 - [Responsive-navbar](https://rabiaismail21.github.io/30-days-30-projects/Responsive-navbar)
 - [Tip-Calculator](https://rabiaismail21.github.io/30-days-30-projects/Tip-Calculator)
 - [Digital Clock](https://rabiaismail21.github.io/30-days-30-projects/Digital-Clock)
