@@ -3,7 +3,9 @@
 Here are links to all 30 projects:
 
 - [Color Picker](https://rabiaismail21.github.io/30-days-30-projects/Color-picker)
-- [Project 2](https://<your-username>.github.io/<repository-name>/project2/)
-- [Project 3](https://<your-username>.github.io/<repository-name>/project3/)
-- [Project 4](https://<your-username>.github.io/<repository-name>/project4/)
-- [Project 5](https://<your-username>.github.io/<repository-name>/project5/)
+- [Responsive-navbar](https://rabiaismail21.github.io/30-days-30-projects/Responsive-navbar)
+- [Tip-Calculator](https://rabiaismail21.github.io/30-days-30-projects/Tip-Calculator)
+- [Digital Clock](https://rabiaismail21.github.io/30-days-30-projects/Digital%Clock)
+- [Stop-watch](https://rabiaismail21.github.io/30-days-30-projects/Stop-watch)
+- [Pricing-cards](https://rabiaismail21.github.io/30-days-30-projects/Pricing-cards)
+- [Dark-mode-toggle](https://rabiaismail21.github.io/30-days-30-projects/Dark-mode-toggle)
