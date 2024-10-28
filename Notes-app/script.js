@@ -1,3 +1,7 @@
+const bgColors = ['#82E8D5', '#A5E882', '#E8DF3A', '#8C82E8', '#FF6BDF'];
+let noteIndex = 0;
+
+
 let addNoteBtn = document.querySelector(".add-note-btn");
 let notesContainer = document.querySelector(".notes-container");
 
@@ -12,16 +16,18 @@ function addNotes() {
     newNote.className = "notes";
     newNote.innerHTML = `
         <button class="close-btn">
-            x
+        <i class="fa-solid fa-trash"></i>
         </button>
       <p>${inputValue}</p>
     `;
+    newNote.style.backgroundColor = bgColors[noteIndex % bgColors.length];
+    noteIndex++;
     notesContainer.prepend(newNote);
     userInput.value = '';
 
     let closeBtn = newNote.querySelector('.close-btn');
     closeBtn.addEventListener('click', e => {
-    e.target.parentElement.style.display = 'none';
+    e.target.parentElement.parentElement.style.display = 'none';
     })
   }
 }
