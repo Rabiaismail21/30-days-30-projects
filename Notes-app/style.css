@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+    width: 90%;
+    /* background-color: pink; */
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.input-field {
+    width: 60%;
+    min-width: 400px;
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.input-field textarea {
+    flex: 4;
+    background-color: #F0D9B4;
+    border: none;
+    padding: 1rem 1rem;
+    outline: none;
+    border-radius: 8px;
+    min-height: 50px;
+    max-height: 200px;
+}
+
+.add-note-btn {
+    flex: 1;
+    height: 60px;
+    background-color:#121212;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.notes-container {
+    width: 100%;
+    margin-top: 2rem;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 90%;
+    gap: 1rem;
+    position: relative;
+
+}
+
+.notes{
+    background-color: rgb(125, 230, 170);
+    height: auto;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+.notes p {
+     /* padding-top: 1.5rem; */
+}
+
+.close-btn {
+    position: absolute;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 150px;
+    border: none;
+    background-color: #121212;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px){
+    .notes-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
