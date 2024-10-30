@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/72225e7e07.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Side Bar Menu</title>
+  </head>
+
+  <body>
+    <aside id="aside-menu" class="close">
+      <button class="toggle-btn">
+        <i class="fa-solid fa-arrow-right-long"></i>
+      </button>
+      <div class="menu-bar">
+        <div class="header">
+          <i class="fa-solid fa-truck-front"></i>
+          <h4 class="title">Snap Cart</h4>
+        </div>
+        <ul>
+          <li>
+            <i class="fa-solid fa-house"></i>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-chart-pie"></i>
+            <a href="">Dashboard</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-box"></i>
+            <a href="">Products</a>
+          </li>
+          <li><i class="fa-solid fa-envelope"></i><a href="">Messages</a></li>
+          <li><i class="fa-solid fa-cart-shopping"></i><a href="">Order</a></li>
+          <li>
+            <i class="fa-solid fa-calendar-days"></i><a href="">Calender</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-list-check"></i>
+            <a href="">Activity</a>
+          </li>
+          <li><i class="fa-solid fa-chart-simple"></i><a href="">Static</a></li>
+          <li>
+            <i class="fa-solid fa-file"></i>
+            <a href="">Documents</a>
+          </li>
+          <hr class="divider" />
+          <li>
+            <i class="fa-solid fa-comments"></i>
+            <a href="">Chat</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-gear"></i>
+            <a href="">Settings</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <a href="">Log out</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <script>
+      let asideMenu = document.getElementById("aside-menu");
+      let toggleBtn = document.querySelector(".toggle-btn");
+      let title = document.querySelector(".title");
+
+      toggleBtn.addEventListener("click", () => {
+        asideMenu.classList.toggle("open");
+        asideMenu.classList.toggle("close");
+        if(asideMenu.classList.contains('open')){
+            toggleBtn.style.transform = 'rotate(180deg)';
+        }
+         else {
+            toggleBtn.style.transform = 'rotate(0)';
+         }
+      });
+    </script>
+  </body>
+</html>
+
+<!-- design inspiration from https://dribbble.com/shots/16265164-Side-Menu-Design/attachments/8132681?mode=media -->
