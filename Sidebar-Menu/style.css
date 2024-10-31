@@ -8,12 +8,13 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 aside {
-    height: 95vh;
+    height: 85vh;
     margin-left: 1rem;
     border-radius: 12px;
     position: relative;
@@ -35,7 +36,6 @@ padding: 0 1rem;
 .toggle-btn {
     position: absolute;
     right: -14px;
-    /* z-index: 2; */
     top: 0.5rem;
     color: #000;
     background-color: #8beb16;
@@ -48,11 +48,9 @@ padding: 0 1rem;
 .header {
     display: flex;
     align-items: center;
-    /* background-color: transparent; */
     border: none;
     margin: 1rem 0 1.3rem 0;
     gap: 12px;
-    /* background-color: red; */
 }
 
 .header i {
@@ -70,7 +68,6 @@ padding: 0 1rem;
 
 
 ul {
-    /* padding-left: 1rem; */
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
@@ -82,6 +79,10 @@ ul li {
     display: flex;
     gap: 16px;
     align-items: center;
+    position: relative;
+    z-index: 1;
+    width: max-content;
+    padding-bottom: 4px;
 }
 
 ul li a {
@@ -96,6 +97,7 @@ ul li a {
     background-color: rgba(107, 105, 105, 0.737);
     border: none;
     height: 2px;
+
 }
 
 .open {
@@ -104,4 +106,23 @@ ul li a {
 .close {
     width: 45px;
 }
+.underline::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background-color: #8beb16;
+    top: 1.3rem;
+    left: 0;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+  }
+  
+  .underline:hover::before{
+    width: 100%;
+  }
 
+  footer p {
+    text-align: center;
+    margin-top: 1rem;
+  }
