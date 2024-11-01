@@ -10,4 +10,4 @@ Here are links to all 30 projects:
 - [Pricing-cards](https://rabiaismail21.github.io/30-days-30-projects/Pricing-cards)
 - [Dark-mode-toggle](https://rabiaismail21.github.io/30-days-30-projects/Dark-mode-toggle)
 - [Notes-app](https://rabiaismail21.github.io/30-days-30-projects/Notes-app)
-- [Side Menu](https://rabiaismail21.github.io/30-days-30-projects/Notes-app)
+- [Side Menu](https://rabiaismail21.github.io/30-days-30-projects/Side-menu)
