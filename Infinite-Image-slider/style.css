@@ -21,23 +21,23 @@ body {
     white-space: nowrap;
 }
 
-.scroller {
+.slider {
     display: flex;
-    /* width of scroller * to number of slides or items or images */
+    /* width of slider * to number of slides or items or images */
     width: calc(250px * 16);
     gap: 24px;
     position: relative;
 }
 
-.upper-scroller {
+.upper-slider {
     animation: scroll-left 30s linear infinite;
     /* background-color: red; */
 }
 
-.lower-scroller {
+.lower-slider {
     animation: scroll-right 30s linear infinite;
 }
-.scroller-item {
+.slider-item {
     height: 200px;
     width: 250px;
     display: flex;
@@ -45,7 +45,7 @@ body {
     
 }
 
-.scroller-item img {
+.slider-item img {
     width: 100%;
 }
 
